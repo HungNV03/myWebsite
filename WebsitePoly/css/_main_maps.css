@@ -1,0 +1,15 @@
+#main_maps {
+    width: 100%;
+    padding-top: 75px;
+}
+
+#main_maps > .maps {
+    width: 100%;
+    padding: 25px 50px;
+    height: calc(100vh - 75px);
+}
+
+#main_maps > .maps > .iframe {
+    width: calc(100% - 100px);
+    height: 500px;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/_header.css">
+    <link rel="stylesheet" href="css/_main_contact.css">
+</head>
+
+<body onscroll="scrollBody()">
+    <header onmousemove="mouseInHeader()" onmouseleave="mouseOutHeader()" id="header_top" class="">
+        <div class="logo-header">
+            <h1 class="logo-header-text">FPT</h1>
+            <span class="logo-header-subText">Polytechnic</span>
+        </div>
+        <ul class="menu-header">
+            <li class="menu-item"><a href="index.html">Trang chủ</a></li>
+            <li class="menu-item"><a href="news.html">Tin tức</a></li>
+            <li class="menu-item"><a href="#">Chuyên ngành đào tạo</a>
+                <ul class="sub-menu">
+                    <li class="sub-menu-item"><a href="#">Công nghệ thông tin</a></li>
+                    <li class="sub-menu-item"><a href="#">Đồ họa kỹ thuật</a></li>
+                    <li class="sub-menu-item"><a href="#">Quản trị khách sạn</a></li>
+                </ul>
+            </li>
+            <li class="menu-item active"><a href="contact.html">Liên hệ</a></li>
+            <li class="menu-item"><a href="maps.html">MAPS</a></li>
+            <li class="menu-item"><a href="about.html">Giới thiệu</a></li>
+        </ul>   
+    </header>
+    <main>
+        <section id="main_contact">
+            <div class="contact-panel">
+                <fieldset>
+                    <legend>Liên hệ với chúng tôi</legend>
+                    <form action="" method="post">
+                        <div class="form-group">
+                            <label class="label-input" for="name">Họ và tên</label>
+                            <input type="text" class="form-control" name="name" id="name" placeholder="Vui lòng nhập họ tên ...">
+                        </div>
+                        <div class="form-group">
+                            <label class="label-input" for="phone_number">Số điện thoại liên hệ</label>
+                            <input type="number" class="form-control" name="phone_number" id="phone_number" placeholder="Vui lòng nhập SDT ...">
+                        </div>
+                        <div class="form-group">
+                            <label class="label-input" for="email_address">Địa chỉ Email</label>
+                            <input type="email" class="form-control" name="email_address" id="email_address" placeholder="Vui lòng nhập Email ...">
+                        </div>
+                        <div class="form-group">
+                            <label class="label-input" for="content">Nội dung</label>
+                            <textarea type="text" class="form-control" name="content" id="content" placeholder="Vui lòng nhập nội dung gửi ..." rows="5"></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit">Gửi đi</button>
+                    </form>
+                </fieldset>
+            </div>
+        </section>
+    </main>
+    <script src="js/_header.js"></script>
+</body>
+<hr>
+<footer>
+    <a href="https://www.facebook.com/profile.php?id=100039689112751" target="_blank">Powered by @hungnvpd06861</a>
+</footer>
+</html>

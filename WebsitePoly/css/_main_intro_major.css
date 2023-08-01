@@ -1,0 +1,91 @@
+#main_intro_major {
+    width: 100%;
+    padding: 50px 150px;
+}
+
+#main_intro_major > .table-majors {
+    padding: 100px 25px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: white;
+}
+
+#main_intro_major > .table-majors > .cell {
+    width: 100%;
+    height: 225px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 69, 126, 0.507);
+}
+
+#main_intro_major > .table-majors > .cell.first {
+    background-color: white;
+    color: black;
+}
+
+#main_intro_major > .table-majors > .cell.first > .content {
+    background-color: white;
+}
+
+#main_intro_major > .table-majors > .cell > .content {
+    width: 100%;
+    padding: 25px;
+    color: white;
+    position: relative;
+    height: 100%;
+    background-color: rgba(0, 69, 126, 0.507);
+}
+
+#main_intro_major > .table-majors > .cell.cell.first > .content > .title {
+    color: black;
+    position: unset;
+    transition: none;
+}
+
+#main_intro_major > .table-majors > .cell.cell.first > .content > p.des {
+    color: black;
+    padding: 25px 0px;
+}
+
+#main_intro_major > .table-majors > .cell > .content > .title {
+    color: inherit;
+    width: 100%;
+    position: absolute;
+    top: 80%;
+    left: 25px;
+    transition: all 0.5s ease-in-out;
+}
+
+#main_intro_major > .table-majors > .cell > .content > .sub-link {
+    width: calc(100% - 50px);
+    position: absolute;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: inherit;
+    top: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease-in-out;
+}
+
+#main_intro_major > .table-majors > .cell > .content > .sub-link > .sub-link-item > a {
+    color: inherit;
+    line-height: 2;
+    display: block;
+}
+
+#main_intro_major > .table-majors > .cell > .content > .sub-link > .sub-link-item > a:hover {
+    color: rgb(252, 180, 46);
+}
+
+#main_intro_major > .table-majors > .cell:hover > .content > .title {
+    top: 25px;
+    color: rgb(248, 179, 51);
+}
+
+#main_intro_major > .table-majors > .cell:hover > .content > .sub-link {
+    opacity: 1;
+    visibility: visible;
+    top: 50px;
+}

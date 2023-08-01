@@ -1,0 +1,103 @@
+#header_top {
+    width: 100%;
+    height: 75px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.24);
+    transition: all 0.2s ease-in-out;
+}
+
+#header_top.sticky {
+    background-color: white;
+    height: 50px;
+}
+
+#header_top > .logo-header {
+    width: 25%;
+    padding: 0 2.5rem;
+    color: white;
+}
+
+#header_top.sticky > .logo-header {
+    color: black
+}
+
+#header_top > .logo-header > .logo-header-text {
+    font-weight: bold;
+    text-transform: uppercase;
+    display: inline-block;
+    letter-spacing: 0.1rem;
+}
+
+#header_top > .logo-header > .logo-header-subText {
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+#header_top > .menu-header {
+    width: 75%;
+    padding: 0 2.5rem;
+    display: flex;
+    
+}
+#header_top > .menu-header > .menu-item {
+    color: white;
+    position: relative;
+}
+#header_top > .menu-header > .menu-item > a {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    color: inherit;
+    text-transform: uppercase;
+    transition: all 0.2s ease-in-out;
+}
+
+#header_top > .menu-header > .menu-item > a:hover {
+    background-color: white;
+    color: black;
+}
+
+#header_top > .menu-header > .menu-item.active {
+    border-bottom: solid 2px white;
+}
+
+#header_top.sticky > .menu-header > .menu-item > a {
+    color: black;
+}
+
+#header_top.sticky > .menu-header > .menu-item > a:hover {
+    background-color: rgba(0, 63, 121, 0.808);
+    color: white;
+}
+
+#header_top.sticky > .menu-header > .menu-item.active {
+    border-bottom: solid 2px black;
+}
+
+#header_top > .menu-header > .menu-item > .sub-menu {
+    display: block;
+    position: absolute;
+    background-color:  white;
+    top: 100%;
+    left: 0;
+    transition: all 0.2s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+}
+#header_top > .menu-header > .menu-item > .sub-menu > .sub-menu-item > a {
+    padding: 0.5rem 1rem;
+    width: 100%;
+    display: block;
+}
+
+#header_top > .menu-header > .menu-item > .sub-menu > .sub-menu-item > a:hover {
+    background-color: rgba(1, 54, 104, 0.808);
+    color: white;
+}
+#header_top > ul.menu-header > li.menu-item:hover > .sub-menu {
+    opacity: 1;
+    visibility: visible;
+}
